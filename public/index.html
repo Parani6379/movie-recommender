@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Movie Recommender</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+  <h1>🎬  Movie Recommender</h1>
+  <input type="text" id="searchBox" placeholder="Search movies or genre...">
+  <button id="searchBtn">Search</button>
+</header>
+
+<section class="previous-searches">
+  <h2>Recently Searched</h2>
+  <div id="recentList"></div>
+</section>
+
+<section id="recommendedSection">
+  <h2>Recommended Movies</h2>
+  <div id="recommendedList" class="results">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Loading recommendations...</p>
+    </div>
+  </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
